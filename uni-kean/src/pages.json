@@ -1,0 +1,148 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^wd-(.*)": "wot-design-uni/components/wd-$1/wd-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/publish/index",
+      "style": {
+        "navigationBarTitleText": "发布"
+      }
+    },
+    {
+      "path": "pages/message/index",
+      "style": {
+        "navigationBarTitleText": "消息"
+      }
+    },
+    {
+      "path": "pages/mine/index",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/auth/login",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/auth/register",
+      "style": {
+        "navigationBarTitleText": "注册",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/task/detail",
+      "style": {
+        "navigationBarTitleText": "代课详情"
+      }
+    },
+    {
+      "path": "pages/task/edit",
+      "style": {
+        "navigationBarTitleText": "编辑代课"
+      }
+    },
+    {
+      "path": "pages/mine/published",
+      "style": {
+        "navigationBarTitleText": "我的发布"
+      }
+    },
+    {
+      "path": "pages/mine/applied",
+      "style": {
+        "navigationBarTitleText": "我的申请"
+      }
+    },
+    {
+      "path": "pages/mine/profile",
+      "style": {
+        "navigationBarTitleText": "个人资料"
+      }
+    },
+    {
+      "path": "pages/mine/reviews",
+      "style": {
+        "navigationBarTitleText": "我的评价"
+      }
+    },
+    {
+      "path": "pages/mine/settings",
+      "style": {
+        "navigationBarTitleText": "设置"
+      }
+    },
+    {
+      "path": "pages/mine/favorites",
+      "style": {
+        "navigationBarTitleText": "我的收藏"
+      }
+    },
+    {
+      "path": "pages/mine/blacklist",
+      "style": {
+        "navigationBarTitleText": "黑名单"
+      }
+    },
+    {
+      "path": "pages/mine/feedback",
+      "style": {
+        "navigationBarTitleText": "举报与反馈"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "课安",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F5F6F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#4D80F0",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "static/tab/home.png",
+        "selectedIconPath": "static/tab/home-active.png"
+      },
+      {
+        "pagePath": "pages/publish/index",
+        "text": "发布",
+        "iconPath": "static/tab/publish.png",
+        "selectedIconPath": "static/tab/publish-active.png"
+      },
+      {
+        "pagePath": "pages/message/index",
+        "text": "消息",
+        "iconPath": "static/tab/message.png",
+        "selectedIconPath": "static/tab/message-active.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "static/tab/mine.png",
+        "selectedIconPath": "static/tab/mine-active.png"
+      }
+    ]
+  }
+}

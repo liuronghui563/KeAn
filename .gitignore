@@ -1,0 +1,14 @@
+.env
+.env.local
+*.log
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+target/
+node_modules/
+unpackage/
+dist/
+.cursor/
+kean/target/

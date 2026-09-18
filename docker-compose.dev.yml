@@ -1,0 +1,29 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: kean-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD:-root}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-kean}
+    ports:
+      - "${MYSQL_PORT:-3306}:3306"
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - kean-mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    container_name: kean-redis
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    volumes:
+      - kean-redis-data:/data
+
+volumes:
+  kean-mysql-data:
+  kean-redis-data:
